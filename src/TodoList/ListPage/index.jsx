@@ -5,8 +5,9 @@ import { PendingList } from "./PendingList";
 
 export const ListPage = () => {
   const [listItems, setListItems] = useState([]);
-  const [showList, setShowList] = useState(true);
+  const [showList, setShowList] = useState(false);
   const idPrefix = useId();
+
   const toggleListVisibility = () => {
     setShowList(!showList);
   };
@@ -17,41 +18,52 @@ export const ListPage = () => {
       { id: `${idPrefix}` + Math.random(), value: item, isPending: true },
     ]);
   };
+
+  const styles = {
+    input: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: "20px",
+    },
+    listContainer: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: "20px",
+    },
+    button: {
+      cursor: "pointer",
+      padding: "5px 12px",
+      border: "none",
+      borderRadius: "4px",
+      gap: "8px",
+    },
+    listButton: {
+      backgroundColor: "lightgray",
+    },
+  };
+
   return (
-    <div>
-      <Input updateListItems={updateListItems} />
-      <button
-        style={{
-          marginTop: "12px",
-          marginLeft: "12px",
-          cursor: "pointer",
-          padding: "6px 15px",
-          border: "none",
-          borderRadius: "4px",
-          background: "lightgray",
-        }}
-        onClick={toggleListVisibility}
-      >
-        {showList ? "Hide List" : "Show List"}
-      </button>
-      {showList && (
-        <PendingList listItems={listItems} setListItems={setListItems} />
-      )}
-      {showList && (
-        <CompletedList listItems={listItems} setListItems={setListItems} />
-      )}
-    </div>
+    <>
+      <div style={styles.input}>
+        <Input updateListItems={updateListItems} />
+      </div>
+      <div style={styles.listContainer}>
+        <button
+          style={{ ...styles.button, ...styles.listButton }}
+          onClick={toggleListVisibility}
+        >
+          {showList ? "Hide List" : "Show List"}
+        </button>
+        {showList && (
+          <PendingList listItems={listItems} setListItems={setListItems} />
+        )}
+        {showList && (
+          <CompletedList listItems={listItems} setListItems={setListItems} />
+        )}
+      </div>
+    </>
   );
 };
-
-// We need to break the list into 2 separate lists:
-// 1. Pending tasks
-// 2. Completed tasks
-
-// Add will add the todo to pending task by default
-// For each todo there will be 2 buttons, one will be to mark it as complete/incomplete
-// and another button will be to delete it
-
-// Try using 1 state only
-// OR
-// Try with 2 states
