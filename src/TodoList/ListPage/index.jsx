@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Input } from "../Input";
 import { CompletedList } from "./CompletedList";
 import { PendingList } from "./PendingList";
@@ -6,13 +6,16 @@ import { PendingList } from "./PendingList";
 export const ListPage = () => {
   const [listItems, setListItems] = useState([]);
   const [showList, setShowList] = useState(true);
-
+  const idPrefix = useId();
   const toggleListVisibility = () => {
     setShowList(!showList);
   };
 
   const updateListItems = (item) => {
-    setListItems(...listItems, { item, isPending: true });
+    setListItems([
+      ...listItems,
+      { id: `${idPrefix}` + Math.random(), value: item, isPending: true },
+    ]);
   };
   return (
     <div>
@@ -34,7 +37,9 @@ export const ListPage = () => {
       {showList && (
         <PendingList listItems={listItems} setListItems={setListItems} />
       )}
-      {showList && <CompletedList listItems={listItems} />}
+      {showList && (
+        <CompletedList listItems={listItems} setListItems={setListItems} />
+      )}
     </div>
   );
 };
