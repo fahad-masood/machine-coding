@@ -2,7 +2,7 @@ import { useId, useState } from "react";
 import { Input } from "./Input";
 import { ListItems } from "./ListItems";
 
-export const TodoList = () => {
+const TodoList = () => {
   const [listItems, setListItems] = useState([]);
   const [showList, setShowList] = useState(false);
   const idPrefix = useId();

@@ -1,0 +1,39 @@
+{
+  "jokes": [
+    {
+      "id": 1,
+      "question": "Why does Virat Kohli love rainy days?",
+      "answer": "Because he gets to show off his cover drive!"
+    },
+    {
+      "id": 2,
+      "question": "What's Ravindra Jadeja's favorite hobby?",
+      "answer": "Spinning yarns!"
+    },
+    {
+      "id": 3,
+      "question": "Why did Rohit Sharma become a chef?",
+      "answer": "He's great at cooking up big scores!"
+    },
+    {
+      "id": 4,
+      "question": "What's Ravichandran Ashwin's favorite subject?",
+      "answer": "Spin-ology!"
+    },
+    {
+      "id": 5,
+      "question": "Why does Jasprit Bumrah make a great detective?",
+      "answer": "He's always on the hunt for the perfect line and length!"
+    },
+    {
+      "id": 6,
+      "question": "What's Shikhar Dhawan's favorite dance move?",
+      "answer": "The Gabbar shake!"
+    },
+    {
+      "id": 7,
+      "question": "Why did Hardik Pandya start a moving company?",
+      "answer": "Because he's an all-rounder who can handle any shift!"
+    }
+  ]
+}

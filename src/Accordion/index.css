@@ -1,0 +1,25 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-items {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 600px;
+  padding: 0px 20px;
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.title {
+  margin-right: 12px;
+}
+
+.btn {
+  position: absolute;
+  right: 2rem;
+}
