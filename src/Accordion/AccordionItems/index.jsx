@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const AccordionItems = ({ qna, expanded, currentId, setCurrentId }) => {
   const [show, setShow] = useState(false);
 
-  const setToggle = (id) => {
+  const toggle = (id) => {
     if (id === undefined || id === null || id === currentId) {
       setShow(!show);
     } else {
@@ -15,10 +15,10 @@ export const AccordionItems = ({ qna, expanded, currentId, setCurrentId }) => {
   return (
     <div
       className="accordion-items"
-      onClick={() => setToggle(expanded ? qna.id : undefined)}
+      onClick={() => toggle(expanded ? qna.id : undefined)}
     >
       <h3 className="title">
-        {qna.question}{" "}
+        {qna.question}
         <span className="btn">
           {show && (currentId === qna.id || !expanded) ? "-" : "+"}
         </span>
