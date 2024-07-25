@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./index.css";
 export const ListItems = ({
   id,
   value,
@@ -19,21 +19,15 @@ export const ListItems = ({
     setListItems([...filteredValues, valueToBeChanged]);
   };
   return (
-    <div>
-      <li>{value}</li>
-      <div>
-        <button
-          //   style={{ ...styles.button, ...styles.deleteButton }}
-          onClick={() => handleDelete(id)}
-        >
-          Delete
-        </button>
-        <button
-          //   style={{ ...styles.button, ...styles.completeButton }}
-          onClick={() => handleStatus(id, status)}
-        >
+    <div className="list-card" draggable>
+      <li className="text">{value}</li>
+      <div className="buttons">
+        <div className="delete-button" onClick={() => handleDelete(id)}>
+          🗑️
+        </div>
+        <div className="status-button" onClick={() => handleStatus(id, status)}>
           {buttonName}
-        </button>
+        </div>
       </div>
     </div>
   );

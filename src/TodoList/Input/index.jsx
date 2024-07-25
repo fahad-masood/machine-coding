@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./index.css";
 
 export const Input = ({ updateListItems }) => {
   const [inputValue, setInputValue] = useState("");
@@ -33,19 +34,20 @@ export const Input = ({ updateListItems }) => {
   };
 
   return (
-    <div>
+    <div className="input-container">
       <input
         style={styles.input}
         type="text"
         onChange={handleChange}
         value={inputValue}
+        className="input-box"
       />
       <button
         disabled={!inputValue}
         onClick={() => {
           handleClick();
         }}
-        style={{ ...styles.button, ...styles.addButton }}
+        className="input-button"
       >
         Add
       </button>

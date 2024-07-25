@@ -1,0 +1,22 @@
+.input-container {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  width: 100%;
+}
+
+.input-box {
+  width: 63%;
+  margin-right: 4px;
+  padding: 2px;
+}
+
+.input-button {
+  width: 33%;
+  cursor: pointer;
+  background: lemonchiffon;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
