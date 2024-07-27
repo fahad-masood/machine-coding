@@ -1,0 +1,11 @@
+.fe-container {
+  width: 800px;
+  margin: auto;
+  border-left: 4px solid black;
+  padding-left: 8px;
+}
+
+.file-name {
+  margin-left: 2px;
+  cursor: pointer;
+}

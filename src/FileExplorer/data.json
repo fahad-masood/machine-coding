@@ -1,0 +1,297 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "Documents",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Work",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Projects",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Project A",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "proposal.docx",
+                      "type": "file",
+                      "size": 2048
+                    },
+                    {
+                      "name": "budget.xlsx",
+                      "type": "file",
+                      "size": 1536
+                    }
+                  ]
+                },
+                {
+                  "name": "Project B",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "report.pdf",
+                      "type": "file",
+                      "size": 3072
+                    },
+                    {
+                      "name": "data.csv",
+                      "type": "file",
+                      "size": 5120
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Meetings",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "agenda.docx",
+                  "type": "file",
+                  "size": 1024
+                },
+                {
+                  "name": "minutes.docx",
+                  "type": "file",
+                  "size": 1280
+                }
+              ]
+            },
+            {
+              "name": "report.docx",
+              "type": "file",
+              "size": 2048
+            },
+            {
+              "name": "presentation.pptx",
+              "type": "file",
+              "size": 4096
+            }
+          ]
+        },
+        {
+          "name": "Personal",
+          "type": "folder",
+          "children": [
+            {
+              "name": "Finances",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "budget.xlsx",
+                  "type": "file",
+                  "size": 1024
+                },
+                {
+                  "name": "taxes_2023.pdf",
+                  "type": "file",
+                  "size": 3584
+                }
+              ]
+            },
+            {
+              "name": "Resume",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "resume.docx",
+                  "type": "file",
+                  "size": 512
+                },
+                {
+                  "name": "cover_letter.docx",
+                  "type": "file",
+                  "size": 448
+                }
+              ]
+            },
+            {
+              "name": "journal.txt",
+              "type": "file",
+              "size": 2560
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Vacation",
+          "type": "folder",
+          "children": [
+            {
+              "name": "beach",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "sunset.jpg",
+                  "type": "file",
+                  "size": 3072
+                },
+                {
+                  "name": "waves.jpg",
+                  "type": "file",
+                  "size": 2816
+                }
+              ]
+            },
+            {
+              "name": "mountains",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "peak.jpg",
+                  "type": "file",
+                  "size": 2560
+                },
+                {
+                  "name": "valley.jpg",
+                  "type": "file",
+                  "size": 2304
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Family",
+          "type": "folder",
+          "children": [
+            {
+              "name": "birthday.jpg",
+              "type": "file",
+              "size": 1792
+            },
+            {
+              "name": "graduation.jpg",
+              "type": "file",
+              "size": 2048
+            }
+          ]
+        },
+        {
+          "name": "profile.png",
+          "type": "file",
+          "size": 1536
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Rock",
+          "type": "folder",
+          "children": [
+            {
+              "name": "classic_rock.mp3",
+              "type": "file",
+              "size": 4096
+            },
+            {
+              "name": "indie_rock.mp3",
+              "type": "file",
+              "size": 3840
+            }
+          ]
+        },
+        {
+          "name": "Jazz",
+          "type": "folder",
+          "children": [
+            {
+              "name": "smooth_jazz.mp3",
+              "type": "file",
+              "size": 3584
+            },
+            {
+              "name": "bebop.mp3",
+              "type": "file",
+              "size": 3328
+            }
+          ]
+        },
+        {
+          "name": "playlist.m3u",
+          "type": "file",
+          "size": 256
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Movies",
+          "type": "folder",
+          "children": [
+            {
+              "name": "action_movie.mp4",
+              "type": "file",
+              "size": 1572864
+            },
+            {
+              "name": "comedy_movie.mp4",
+              "type": "file",
+              "size": 1441792
+            }
+          ]
+        },
+        {
+          "name": "TV Shows",
+          "type": "folder",
+          "children": [
+            {
+              "name": "series_episode1.mp4",
+              "type": "file",
+              "size": 734003
+            },
+            {
+              "name": "series_episode2.mp4",
+              "type": "file",
+              "size": 748739
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Downloads",
+      "type": "folder",
+      "children": [
+        {
+          "name": "software_installer.exe",
+          "type": "file",
+          "size": 5242880
+        },
+        {
+          "name": "ebook.pdf",
+          "type": "file",
+          "size": 10485760
+        }
+      ]
+    },
+    {
+      "name": "config.ini",
+      "type": "file",
+      "size": 256
+    },
+    {
+      "name": "log.txt",
+      "type": "file",
+      "size": 4096
+    }
+  ]
+}
