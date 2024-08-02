@@ -5,6 +5,7 @@ import FileExplorer from "./FileExplorer";
 import RoundCountdownTimer from "./RoundCountdownTimer";
 import TodoList from "./TodoList";
 import data from "./FileExplorer/data.json";
+import Autocomplete from "./Autocomplete";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     {/* <TodoList /> */}
     {/* <RoundCountdownTimer /> */}
     {/* <Accordion /> */}
-    <FileExplorer data={data} />
+    {/* <FileExplorer data={data} /> */}
+    <Autocomplete />
   </React.StrictMode>
 );
