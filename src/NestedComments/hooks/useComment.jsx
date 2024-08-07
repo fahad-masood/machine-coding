@@ -14,9 +14,9 @@ const useComment = () => {
   };
 
   const deleteComment = (structure, commentId) => {
-    if (structure.id != commentId) {
-      // return structure.replies.filter((comment) => comment.id !== commentId);
-      return structure;
+    if (structure.id === commentId) {
+      return structure.replies.filter((comment) => comment.id !== commentId);
+      // return structure;
     }
 
     const updatedReplies = structure.replies.map((comment) => {

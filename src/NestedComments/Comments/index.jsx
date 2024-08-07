@@ -30,7 +30,10 @@ export const Comments = ({
 
   return (
     <>
-      <div className="comment-container" key={commentsData.id}>
+      <div
+        className={`${commentsData.content && "comment-container"} `}
+        key={commentsData.id}
+      >
         <p>{commentsData.content}</p>
 
         {showInput && (
@@ -50,10 +53,12 @@ export const Comments = ({
             <button onClick={handleClick}>Cancel</button>
           </>
         ) : (
-          <>
-            <button onClick={handleClick}>Reply</button>
-            <button onClick={handleDelete}>Delete</button>
-          </>
+          commentsData.content && (
+            <>
+              <button onClick={handleClick}>Reply</button>
+              <button onClick={handleDelete}>Delete</button>
+            </>
+          )
         )}
       </div>
       <div className="paddingLeft">
