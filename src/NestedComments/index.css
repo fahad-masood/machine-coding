@@ -1,0 +1,19 @@
+.comment-container {
+  width: 40vw;
+  border-left: 4px solid blue;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-shadow: 2px 2px 4px rgba(20, 30, 40, 0.2);
+}
+
+.paddingLeft {
+  padding-left: 24px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  margin: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
