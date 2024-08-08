@@ -6,6 +6,7 @@ const Autocomplete = () => {
   const [originalList, setOriginalList] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
   const [isListVisible, setIsListVisible] = useState(false);
+  const [showClearButton, setShowClearButton] = useState(false);
 
   useEffect(() => {
     try {
@@ -29,10 +30,12 @@ const Autocomplete = () => {
       result.title.toLowerCase().includes(searchValue.toLowerCase())
     );
     setFilteredList(filteredArray);
+    !searchValue && setShowClearButton(false);
   };
 
   const handleItemClick = (title) => {
     setValue(title);
+    setShowClearButton(true);
     setIsListVisible(false);
   };
 
@@ -46,14 +49,27 @@ const Autocomplete = () => {
 
   return (
     <div className="autocomplete-container">
-      <input
-        type="text"
-        className="autocomplete-input"
-        value={value}
-        onChange={handleSearch}
-        onFocus={handleInputFocus}
-        onBlur={handleInputBlur}
-      />
+      <div className="autocomplete-input-container">
+        <input
+          type="text"
+          className="autocomplete-input"
+          value={value}
+          onChange={handleSearch}
+          onFocus={handleInputFocus}
+          onBlur={handleInputBlur}
+        />
+        {showClearButton && (
+          <div
+            className="clear-button"
+            onClick={() => {
+              setValue("");
+              setShowClearButton(false);
+            }}
+          >
+            ⅹ
+          </div>
+        )}
+      </div>
       {isListVisible && (
         <ul className="autocomplete-list">
           {filteredList?.length > 0 ? (
@@ -76,10 +92,3 @@ const Autocomplete = () => {
 };
 
 export default Autocomplete;
-
-// Show list only on input focus
-// List shouldn't be open after clicking on any list item
-// On clicking input, list must be shown and vice versa
-
-// Feedback
-// Make a clear filter button --> Inside input box

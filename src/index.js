@@ -15,8 +15,8 @@ root.render(
     {/* <RoundCountdownTimer /> */}
     {/* <Accordion /> */}
     {/* <FileExplorer data={data} /> */}
-    {/* <Autocomplete /> */}
-    <NestedComments />
+    <Autocomplete />
+    {/* <NestedComments /> */}
   </React.StrictMode>
 );
 

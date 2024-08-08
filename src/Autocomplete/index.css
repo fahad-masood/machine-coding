@@ -6,16 +6,34 @@
   margin-top: 40px;
 }
 
+.autocomplete-input-container {
+  display: flex;
+}
+
 .autocomplete-input {
   width: 300px;
   position: relative;
+  padding-right: 20px;
+}
+
+.clear-button {
+  cursor: pointer;
+  padding: 0 3px;
+  z-index: 5;
+  margin-left: -16px;
+  border-radius: 50%;
+}
+
+.clear-button:hover {
+  background: rgb(30, 28, 28);
+  color: white;
 }
 
 .autocomplete-list {
   list-style: none;
   position: absolute;
   top: 45px;
-  width: 300px;
+  width: 330px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
   max-height: 400px;
